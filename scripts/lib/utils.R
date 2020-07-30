@@ -1,7 +1,7 @@
 read <- function(path) {
   readr::read_csv2(path, 
                    col_types = c("dcl"), 
-                   locale = locale(decimal_mark = ","))
+                   locale = readr::locale(decimal_mark = ","))
 }
 
 check_upload <- function(file, url) {
