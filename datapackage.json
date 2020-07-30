@@ -2,6 +2,7 @@
   "profile": "tabular-data-package",
   "resources": [
     {
+      "id": "47276c05-3e1d-46d3-84f3-b8fbe112a966",
       "name": "letters",
       "path": "data/letters.csv",
       "profile": "tabular-data-resource",
