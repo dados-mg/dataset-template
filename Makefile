@@ -8,13 +8,11 @@ help:
 
 all: clean publish # Limpeza, upload e sincronizacao git
 	git add -u
-	git commit -m "Atualiza obitos"
+	git commit -m "Atualiza dataset"
 	git push origin master
 
-clean: data/obitos-confirmados-covid-19.csv ## Limpeza data-raw/ para data/
-
-data/obitos-confirmados-covid-19.csv: scripts/clean.R scripts/lib/utils.R data-raw/OBITOS_CONF_COVID-19_MG.xlsx
-	Rscript --verbose $< 2> logs/log.Rout
+clean: ## Limpeza data-raw/ para data/
+	Rscript --verbose scripts/clean.R 2> logs/log.Rout
 
 build: ## Compilação datapackage.json para buid/
 	Rscript --verbose scripts/build.R 2> logs/log.Rout
