@@ -2,7 +2,7 @@ library(reticulate)
 
 source("scripts/lib/utils.R")
 
-use_virtualenv("r-reticulate", required = TRUE)
+use_virtualenv("renv/python/virtualenvs/renv-python-3.7.3", required = TRUE)
 source_python("scripts/lib/utils.py")
 
 output <- jsonlite::read_json("datapackage.json")$resources[[1]]$path
