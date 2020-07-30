@@ -10,7 +10,7 @@ id <- jsonlite::read_json("datapackage.json")$resources[[1]]$id
 
 res <- upload_resource(output, 
                        resource_id = id, 
-                       url = Sys.getenv("DADOSMG_DEV_HOST"), 
-                       key = Sys.getenv("DADOSMG_DEV"))
+                       url = Sys.getenv("DADOSMG_PROD_HOST"), 
+                       key = Sys.getenv("DADOSMG_PROD"))
 
 stopifnot(check_upload(file = output, url = res$url))
