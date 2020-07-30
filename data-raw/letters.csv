@@ -1,4 +1,5 @@
-"id";"letter";"vowel"
-1;"a";true
-2;"b";false
-3;"c";false
+id;letter;vowel
+1;a;TRUE
+2;b;FALSE
+3;c;FALSE
+4;d;FALSE
