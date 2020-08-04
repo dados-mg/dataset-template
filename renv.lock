@@ -8,10 +8,6 @@
       }
     ]
   },
-  "Python": {
-    "Version": "3.7.3",
-    "Type": "virtualenv"
-  },
   "Packages": {
     "BH": {
       "Package": "BH",
@@ -170,9 +166,7 @@
     "renv": {
       "Package": "renv",
       "Version": "0.11.0",
-      "Source": "Repository",
-      "Repository": "CRAN",
-      "Hash": "1c3ef87cbb81c23ac96797781ec7aecc"
+      "Source": "Repository"
     },
     "reticulate": {
       "Package": "reticulate",
